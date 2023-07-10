@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="75.257">
+    <testcase classname="E2E Testing Of XYZ Bank" name="Verify the functionality of Bank Manager Login" time="52.294">
+        <failure message="Error {&#10;  message='Target closed&#10;=========================== logs ===========================&#10;waiting for selector &quot;//button[text()='Bank Manager Login']&quot;&#10;============================================================&#10;  name='Error&#10;  stack='Error: Target closed&#10;=========================== logs ===========================&#10;waiting for selector &quot;//button[text()='Bank Manager Login']&quot;&#10;============================================================&#10;    at C:\Users\AKASH~1.KUM\AppData\Local\Temp\playwright-java-14176669479409617578\package\lib\server\chromium\crConnection.js:204:16&#10;    at new Promise (&lt;anonymous&gt;)&#10;    at CRSession.send (C:\Users\AKASH~1.KUM\AppData\Local\Temp\playwright-java-14176669479409617578\package\lib\server\chromium\crConnection.js:200:12)&#10;    at CRExecutionContext.evaluateWithArguments (C:\Users\AKASH~1.KUM\AppData\Local\Temp\playwright-java-14176669479409617578\package\lib\server\chromium\crExecutionContext.js:89:28)&#10;    at FrameExecutionContext.evaluateWithArguments (C:\Users\AKASH~1.KUM\AppData\Local\Temp\playwright-java-14176669479409617578\package\lib\server\javascript.js:73:61)&#10;    at evaluateExpression (C:\Users\AKASH~1.KUM\AppData\Local\Temp\playwright-java-14176669479409617578\package\lib\server\javascript.js:264:26)&#10;    at async InjectedScriptPollHandler.finishHandle (C:\Users\AKASH~1.KUM\AppData\Local\Temp\playwright-java-14176669479409617578\package\lib\server\dom.js:997:22)&#10;    at async RerunnableTask.rerun (C:\Users\AKASH~1.KUM\AppData\Local\Temp\playwright-java-14176669479409617578\package\lib\server\frames.js:1809:73)&#10;}" type="com.microsoft.playwright.PlaywrightException"><![CDATA[Given User launch XYZ Banking application...................................passed
+Then User Add new customer in Add Customer tab..............................failed
+Then User open new account for a new customer in Open Account tab...........skipped
+And user verify details of new customer in Cutomers tab.....................skipped
+
+StackTrace:
+com.microsoft.playwright.PlaywrightException: Error {
+  message='Target closed
+=========================== logs ===========================
+waiting for selector "//button[text()='Bank Manager Login']"
+============================================================
+  name='Error
+  stack='Error: Target closed
+=========================== logs ===========================
+waiting for selector "//button[text()='Bank Manager Login']"
+============================================================
+    at C:\Users\AKASH~1.KUM\AppData\Local\Temp\playwright-java-14176669479409617578\package\lib\server\chromium\crConnection.js:204:16
+    at new Promise (<anonymous>)
+    at CRSession.send (C:\Users\AKASH~1.KUM\AppData\Local\Temp\playwright-java-14176669479409617578\package\lib\server\chromium\crConnection.js:200:12)
+    at CRExecutionContext.evaluateWithArguments (C:\Users\AKASH~1.KUM\AppData\Local\Temp\playwright-java-14176669479409617578\package\lib\server\chromium\crExecutionContext.js:89:28)
+    at FrameExecutionContext.evaluateWithArguments (C:\Users\AKASH~1.KUM\AppData\Local\Temp\playwright-java-14176669479409617578\package\lib\server\javascript.js:73:61)
+    at evaluateExpression (C:\Users\AKASH~1.KUM\AppData\Local\Temp\playwright-java-14176669479409617578\package\lib\server\javascript.js:264:26)
+    at async InjectedScriptPollHandler.finishHandle (C:\Users\AKASH~1.KUM\AppData\Local\Temp\playwright-java-14176669479409617578\package\lib\server\dom.js:997:22)
+    at async RerunnableTask.rerun (C:\Users\AKASH~1.KUM\AppData\Local\Temp\playwright-java-14176669479409617578\package\lib\server\frames.js:1809:73)
+}
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:103)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:106)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:94)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:255)
+	at com.microsoft.playwright.impl.PageImpl.lambda$click$17(PageImpl.java:626)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:79)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.PageImpl.click(PageImpl.java:625)
+	at com.microsoft.playwright.Page.click(Page.java:3370)
+	at com.saucedemo.pages.XYZBank.addNewCustomer(XYZBank.java:40)
+	at stepdefinitions.XYZBankStep.user_add_new_customer_in_add_customer_tab(XYZBankStep.java:29)
+	at ✽.User Add new customer in Add Customer tab(file:///C:/Playwright-Cucumber-Java-main/src/test/java/features/XYZ.feature:7)
+Caused by: com.microsoft.playwright.impl.DriverException: Error {
+  message='Target closed
+=========================== logs ===========================
+waiting for selector "//button[text()='Bank Manager Login']"
+============================================================
+  name='Error
+  stack='Error: Target closed
+=========================== logs ===========================
+waiting for selector "//button[text()='Bank Manager Login']"
+============================================================
+    at C:\Users\AKASH~1.KUM\AppData\Local\Temp\playwright-java-14176669479409617578\package\lib\server\chromium\crConnection.js:204:16
+    at new Promise (<anonymous>)
+    at CRSession.send (C:\Users\AKASH~1.KUM\AppData\Local\Temp\playwright-java-14176669479409617578\package\lib\server\chromium\crConnection.js:200:12)
+    at CRExecutionContext.evaluateWithArguments (C:\Users\AKASH~1.KUM\AppData\Local\Temp\playwright-java-14176669479409617578\package\lib\server\chromium\crExecutionContext.js:89:28)
+    at FrameExecutionContext.evaluateWithArguments (C:\Users\AKASH~1.KUM\AppData\Local\Temp\playwright-java-14176669479409617578\package\lib\server\javascript.js:73:61)
+    at evaluateExpression (C:\Users\AKASH~1.KUM\AppData\Local\Temp\playwright-java-14176669479409617578\package\lib\server\javascript.js:264:26)
+    at async InjectedScriptPollHandler.finishHandle (C:\Users\AKASH~1.KUM\AppData\Local\Temp\playwright-java-14176669479409617578\package\lib\server\dom.js:997:22)
+    at async RerunnableTask.rerun (C:\Users\AKASH~1.KUM\AppData\Local\Temp\playwright-java-14176669479409617578\package\lib\server\frames.js:1809:73)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:188)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:168)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:101)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:106)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:94)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:255)
+	at com.microsoft.playwright.impl.PageImpl.lambda$click$17(PageImpl.java:626)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:79)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.PageImpl.click(PageImpl.java:625)
+	at com.microsoft.playwright.Page.click(Page.java:3370)
+	at com.saucedemo.pages.XYZBank.addNewCustomer(XYZBank.java:40)
+	at stepdefinitions.XYZBankStep.user_add_new_customer_in_add_customer_tab(XYZBankStep.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:64)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:104)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:71)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:199)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:234)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
+]]></failure>
+    </testcase>
+    <testcase classname="E2E Testing Of XYZ Bank" name="Verify the functionality of Customer Login" time="22.196">
+        <failure message="Error {&#10;  message='Navigation failed because page was closed!&#10;=========================== logs ===========================&#10;navigating to &quot;https://www.nseindia.com/option-chain&quot;, waiting until &quot;load&quot;&#10;============================================================&#10;  name='Error&#10;  stack='Error: Navigation failed because page was closed!&#10;=========================== logs ===========================&#10;navigating to &quot;https://www.nseindia.com/option-chain&quot;, waiting until &quot;load&quot;&#10;============================================================&#10;    at C:\Users\AKASH~1.KUM\AppData\Local\Temp\playwright-java-14176669479409617578\package\lib\server\frames.js:634:13&#10;    at async ProgressController.run (C:\Users\AKASH~1.KUM\AppData\Local\Temp\playwright-java-14176669479409617578\package\lib\server\progress.js:101:22)&#10;    at async FrameDispatcher.goto (C:\Users\AKASH~1.KUM\AppData\Local\Temp\playwright-java-14176669479409617578\package\lib\server\dispatchers\frameDispatcher.js:87:59)&#10;    at async DispatcherConnection.dispatch (C:\Users\AKASH~1.KUM\AppData\Local\Temp\playwright-java-14176669479409617578\package\lib\server\dispatchers\dispatcher.js:352:22)&#10;}" type="com.microsoft.playwright.PlaywrightException"><![CDATA[Given User launch XYZ Banking application...................................failed
+When User login by selecting name from dropdown.............................skipped
+Then User Deposits ammount of dollars.......................................skipped
+Then User verify deposit ammount in Transaction tab.........................skipped
+Then User Withdrawl ammount of dollars......................................skipped
+Then User verify withdrawl ammount in Transaction ammount...................skipped
+
+StackTrace:
+com.microsoft.playwright.PlaywrightException: Error {
+  message='Navigation failed because page was closed!
+=========================== logs ===========================
+navigating to "https://www.nseindia.com/option-chain", waiting until "load"
+============================================================
+  name='Error
+  stack='Error: Navigation failed because page was closed!
+=========================== logs ===========================
+navigating to "https://www.nseindia.com/option-chain", waiting until "load"
+============================================================
+    at C:\Users\AKASH~1.KUM\AppData\Local\Temp\playwright-java-14176669479409617578\package\lib\server\frames.js:634:13
+    at async ProgressController.run (C:\Users\AKASH~1.KUM\AppData\Local\Temp\playwright-java-14176669479409617578\package\lib\server\progress.js:101:22)
+    at async FrameDispatcher.goto (C:\Users\AKASH~1.KUM\AppData\Local\Temp\playwright-java-14176669479409617578\package\lib\server\dispatchers\frameDispatcher.js:87:59)
+    at async DispatcherConnection.dispatch (C:\Users\AKASH~1.KUM\AppData\Local\Temp\playwright-java-14176669479409617578\package\lib\server\dispatchers\dispatcher.js:352:22)
+}
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:103)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:106)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:94)
+	at com.microsoft.playwright.impl.FrameImpl.navigateImpl(FrameImpl.java:401)
+	at com.microsoft.playwright.impl.PageImpl.lambda$navigate$32(PageImpl.java:800)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:79)
+	at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:800)
+	at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:41)
+	at com.microsoft.playwright.Page.navigate(Page.java:4293)
+	at com.saucedemo.pages.XYZBank.userNavigatesToXYZBank(XYZBank.java:34)
+	at stepdefinitions.XYZBankStep.user_launch_xyz_banking_application(XYZBankStep.java:24)
+	at ✽.User launch XYZ Banking application(file:///C:/Playwright-Cucumber-Java-main/src/test/java/features/XYZ.feature:12)
+Caused by: com.microsoft.playwright.impl.DriverException: Error {
+  message='Navigation failed because page was closed!
+=========================== logs ===========================
+navigating to "https://www.nseindia.com/option-chain", waiting until "load"
+============================================================
+  name='Error
+  stack='Error: Navigation failed because page was closed!
+=========================== logs ===========================
+navigating to "https://www.nseindia.com/option-chain", waiting until "load"
+============================================================
+    at C:\Users\AKASH~1.KUM\AppData\Local\Temp\playwright-java-14176669479409617578\package\lib\server\frames.js:634:13
+    at async ProgressController.run (C:\Users\AKASH~1.KUM\AppData\Local\Temp\playwright-java-14176669479409617578\package\lib\server\progress.js:101:22)
+    at async FrameDispatcher.goto (C:\Users\AKASH~1.KUM\AppData\Local\Temp\playwright-java-14176669479409617578\package\lib\server\dispatchers\frameDispatcher.js:87:59)
+    at async DispatcherConnection.dispatch (C:\Users\AKASH~1.KUM\AppData\Local\Temp\playwright-java-14176669479409617578\package\lib\server\dispatchers\dispatcher.js:352:22)
+}
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:188)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:168)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:101)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:106)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:94)
+	at com.microsoft.playwright.impl.FrameImpl.navigateImpl(FrameImpl.java:401)
+	at com.microsoft.playwright.impl.PageImpl.lambda$navigate$32(PageImpl.java:800)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:79)
+	at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:800)
+	at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:41)
+	at com.microsoft.playwright.Page.navigate(Page.java:4293)
+	at com.saucedemo.pages.XYZBank.userNavigatesToXYZBank(XYZBank.java:34)
+	at stepdefinitions.XYZBankStep.user_launch_xyz_banking_application(XYZBankStep.java:24)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:64)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:104)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:71)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:199)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:234)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
+]]></failure>
+    </testcase>
+</testsuite>

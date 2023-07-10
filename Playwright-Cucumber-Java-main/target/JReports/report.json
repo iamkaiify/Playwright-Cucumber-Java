@@ -1,0 +1,371 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2023-07-07T17:41:09.405Z",
+        "line": 5,
+        "name": "Verify the functionality of Bank Manager Login",
+        "description": "",
+        "id": "e2e-testing-of-xyz-bank;verify-the-functionality-of-bank-manager-login",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 11804434500,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 17863707300,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepdefinitions.LoginCucumberTest.beforeSteps()"
+                }
+              }
+            ],
+            "line": 6,
+            "name": "User launch XYZ Banking application",
+            "match": {
+              "location": "stepdefinitions.XYZBankStep.user_launch_xyz_banking_application()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 997300,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepdefinitions.LoginCucumberTest.afterSteps()"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "com.microsoft.playwright.PlaywrightException: Error {\n  message\u003d\u0027Target closed\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d logs \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\nwaiting for selector \"//button[text()\u003d\u0027Bank Manager Login\u0027]\"\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n  name\u003d\u0027Error\n  stack\u003d\u0027Error: Target closed\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d logs \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\nwaiting for selector \"//button[text()\u003d\u0027Bank Manager Login\u0027]\"\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n    at C:\\Users\\AKASH~1.KUM\\AppData\\Local\\Temp\\playwright-java-14176669479409617578\\package\\lib\\server\\chromium\\crConnection.js:204:16\n    at new Promise (\u003canonymous\u003e)\n    at CRSession.send (C:\\Users\\AKASH~1.KUM\\AppData\\Local\\Temp\\playwright-java-14176669479409617578\\package\\lib\\server\\chromium\\crConnection.js:200:12)\n    at CRExecutionContext.evaluateWithArguments (C:\\Users\\AKASH~1.KUM\\AppData\\Local\\Temp\\playwright-java-14176669479409617578\\package\\lib\\server\\chromium\\crExecutionContext.js:89:28)\n    at FrameExecutionContext.evaluateWithArguments (C:\\Users\\AKASH~1.KUM\\AppData\\Local\\Temp\\playwright-java-14176669479409617578\\package\\lib\\server\\javascript.js:73:61)\n    at evaluateExpression (C:\\Users\\AKASH~1.KUM\\AppData\\Local\\Temp\\playwright-java-14176669479409617578\\package\\lib\\server\\javascript.js:264:26)\n    at async InjectedScriptPollHandler.finishHandle (C:\\Users\\AKASH~1.KUM\\AppData\\Local\\Temp\\playwright-java-14176669479409617578\\package\\lib\\server\\dom.js:997:22)\n    at async RerunnableTask.rerun (C:\\Users\\AKASH~1.KUM\\AppData\\Local\\Temp\\playwright-java-14176669479409617578\\package\\lib\\server\\frames.js:1809:73)\n}\r\n\tat com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)\r\n\tat com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:103)\r\n\tat com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:106)\r\n\tat com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:94)\r\n\tat com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:255)\r\n\tat com.microsoft.playwright.impl.PageImpl.lambda$click$17(PageImpl.java:626)\r\n\tat com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)\r\n\tat com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)\r\n\tat com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:79)\r\n\tat com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)\r\n\tat com.microsoft.playwright.impl.PageImpl.click(PageImpl.java:625)\r\n\tat com.microsoft.playwright.Page.click(Page.java:3370)\r\n\tat com.saucedemo.pages.XYZBank.addNewCustomer(XYZBank.java:40)\r\n\tat stepdefinitions.XYZBankStep.user_add_new_customer_in_add_customer_tab(XYZBankStep.java:29)\r\n\tat ✽.User Add new customer in Add Customer tab(file:///C:/Playwright-Cucumber-Java-main/src/test/java/features/XYZ.feature:7)\r\nCaused by: com.microsoft.playwright.impl.DriverException: Error {\n  message\u003d\u0027Target closed\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d logs \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\nwaiting for selector \"//button[text()\u003d\u0027Bank Manager Login\u0027]\"\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n  name\u003d\u0027Error\n  stack\u003d\u0027Error: Target closed\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d logs \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\nwaiting for selector \"//button[text()\u003d\u0027Bank Manager Login\u0027]\"\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n    at C:\\Users\\AKASH~1.KUM\\AppData\\Local\\Temp\\playwright-java-14176669479409617578\\package\\lib\\server\\chromium\\crConnection.js:204:16\n    at new Promise (\u003canonymous\u003e)\n    at CRSession.send (C:\\Users\\AKASH~1.KUM\\AppData\\Local\\Temp\\playwright-java-14176669479409617578\\package\\lib\\server\\chromium\\crConnection.js:200:12)\n    at CRExecutionContext.evaluateWithArguments (C:\\Users\\AKASH~1.KUM\\AppData\\Local\\Temp\\playwright-java-14176669479409617578\\package\\lib\\server\\chromium\\crExecutionContext.js:89:28)\n    at FrameExecutionContext.evaluateWithArguments (C:\\Users\\AKASH~1.KUM\\AppData\\Local\\Temp\\playwright-java-14176669479409617578\\package\\lib\\server\\javascript.js:73:61)\n    at evaluateExpression (C:\\Users\\AKASH~1.KUM\\AppData\\Local\\Temp\\playwright-java-14176669479409617578\\package\\lib\\server\\javascript.js:264:26)\n    at async InjectedScriptPollHandler.finishHandle (C:\\Users\\AKASH~1.KUM\\AppData\\Local\\Temp\\playwright-java-14176669479409617578\\package\\lib\\server\\dom.js:997:22)\n    at async RerunnableTask.rerun (C:\\Users\\AKASH~1.KUM\\AppData\\Local\\Temp\\playwright-java-14176669479409617578\\package\\lib\\server\\frames.js:1809:73)\n}\r\n\tat com.microsoft.playwright.impl.Connection.dispatch(Connection.java:188)\r\n\tat com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:168)\r\n\tat com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:101)\r\n\tat com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:106)\r\n\tat com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:94)\r\n\tat com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:255)\r\n\tat com.microsoft.playwright.impl.PageImpl.lambda$click$17(PageImpl.java:626)\r\n\tat com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)\r\n\tat com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)\r\n\tat com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:79)\r\n\tat com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)\r\n\tat com.microsoft.playwright.impl.PageImpl.click(PageImpl.java:625)\r\n\tat com.microsoft.playwright.Page.click(Page.java:3370)\r\n\tat com.saucedemo.pages.XYZBank.addNewCustomer(XYZBank.java:40)\r\n\tat stepdefinitions.XYZBankStep.user_add_new_customer_in_add_customer_tab(XYZBankStep.java:29)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\r\n\tat io.cucumber.java.Invoker.doInvoke(Invoker.java:66)\r\n\tat io.cucumber.java.Invoker.invoke(Invoker.java:24)\r\n\tat io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)\r\n\tat io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:64)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:104)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:71)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:199)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:234)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)\r\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)\r\n",
+              "duration": 22359261800,
+              "status": "failed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 3187000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepdefinitions.LoginCucumberTest.beforeSteps()"
+                }
+              }
+            ],
+            "line": 7,
+            "name": "User Add new customer in Add Customer tab",
+            "match": {
+              "location": "stepdefinitions.XYZBankStep.user_add_new_customer_in_add_customer_tab()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 996800,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepdefinitions.LoginCucumberTest.afterSteps()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3989000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepdefinitions.LoginCucumberTest.beforeSteps()"
+                }
+              }
+            ],
+            "line": 8,
+            "name": "User open new account for a new customer in Open Account tab",
+            "match": {
+              "location": "stepdefinitions.XYZBankStep.user_open_new_account_for_a_new_customer_in_open_account_tab()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 413000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepdefinitions.LoginCucumberTest.afterSteps()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 1994700,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepdefinitions.LoginCucumberTest.beforeSteps()"
+                }
+              }
+            ],
+            "line": 9,
+            "name": "user verify details of new customer in Cutomers tab",
+            "match": {
+              "location": "stepdefinitions.XYZBankStep.user_verify_details_of_new_customer_in_cutomers_tab()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepdefinitions.LoginCucumberTest.afterSteps()"
+                }
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag1"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-07-07T17:42:02.017Z",
+        "line": 11,
+        "name": "Verify the functionality of Customer Login",
+        "description": "",
+        "id": "e2e-testing-of-xyz-bank;verify-the-functionality-of-customer-login",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "com.microsoft.playwright.PlaywrightException: Error {\n  message\u003d\u0027Navigation failed because page was closed!\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d logs \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\nnavigating to \"https://www.nseindia.com/option-chain\", waiting until \"load\"\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n  name\u003d\u0027Error\n  stack\u003d\u0027Error: Navigation failed because page was closed!\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d logs \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\nnavigating to \"https://www.nseindia.com/option-chain\", waiting until \"load\"\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n    at C:\\Users\\AKASH~1.KUM\\AppData\\Local\\Temp\\playwright-java-14176669479409617578\\package\\lib\\server\\frames.js:634:13\n    at async ProgressController.run (C:\\Users\\AKASH~1.KUM\\AppData\\Local\\Temp\\playwright-java-14176669479409617578\\package\\lib\\server\\progress.js:101:22)\n    at async FrameDispatcher.goto (C:\\Users\\AKASH~1.KUM\\AppData\\Local\\Temp\\playwright-java-14176669479409617578\\package\\lib\\server\\dispatchers\\frameDispatcher.js:87:59)\n    at async DispatcherConnection.dispatch (C:\\Users\\AKASH~1.KUM\\AppData\\Local\\Temp\\playwright-java-14176669479409617578\\package\\lib\\server\\dispatchers\\dispatcher.js:352:22)\n}\r\n\tat com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)\r\n\tat com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:103)\r\n\tat com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:106)\r\n\tat com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:94)\r\n\tat com.microsoft.playwright.impl.FrameImpl.navigateImpl(FrameImpl.java:401)\r\n\tat com.microsoft.playwright.impl.PageImpl.lambda$navigate$32(PageImpl.java:800)\r\n\tat com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)\r\n\tat com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:79)\r\n\tat com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:800)\r\n\tat com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:41)\r\n\tat com.microsoft.playwright.Page.navigate(Page.java:4293)\r\n\tat com.saucedemo.pages.XYZBank.userNavigatesToXYZBank(XYZBank.java:34)\r\n\tat stepdefinitions.XYZBankStep.user_launch_xyz_banking_application(XYZBankStep.java:24)\r\n\tat ✽.User launch XYZ Banking application(file:///C:/Playwright-Cucumber-Java-main/src/test/java/features/XYZ.feature:12)\r\nCaused by: com.microsoft.playwright.impl.DriverException: Error {\n  message\u003d\u0027Navigation failed because page was closed!\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d logs \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\nnavigating to \"https://www.nseindia.com/option-chain\", waiting until \"load\"\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n  name\u003d\u0027Error\n  stack\u003d\u0027Error: Navigation failed because page was closed!\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d logs \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\nnavigating to \"https://www.nseindia.com/option-chain\", waiting until \"load\"\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n    at C:\\Users\\AKASH~1.KUM\\AppData\\Local\\Temp\\playwright-java-14176669479409617578\\package\\lib\\server\\frames.js:634:13\n    at async ProgressController.run (C:\\Users\\AKASH~1.KUM\\AppData\\Local\\Temp\\playwright-java-14176669479409617578\\package\\lib\\server\\progress.js:101:22)\n    at async FrameDispatcher.goto (C:\\Users\\AKASH~1.KUM\\AppData\\Local\\Temp\\playwright-java-14176669479409617578\\package\\lib\\server\\dispatchers\\frameDispatcher.js:87:59)\n    at async DispatcherConnection.dispatch (C:\\Users\\AKASH~1.KUM\\AppData\\Local\\Temp\\playwright-java-14176669479409617578\\package\\lib\\server\\dispatchers\\dispatcher.js:352:22)\n}\r\n\tat com.microsoft.playwright.impl.Connection.dispatch(Connection.java:188)\r\n\tat com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:168)\r\n\tat com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:101)\r\n\tat com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:106)\r\n\tat com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:94)\r\n\tat com.microsoft.playwright.impl.FrameImpl.navigateImpl(FrameImpl.java:401)\r\n\tat com.microsoft.playwright.impl.PageImpl.lambda$navigate$32(PageImpl.java:800)\r\n\tat com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)\r\n\tat com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:79)\r\n\tat com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:800)\r\n\tat com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:41)\r\n\tat com.microsoft.playwright.Page.navigate(Page.java:4293)\r\n\tat com.saucedemo.pages.XYZBank.userNavigatesToXYZBank(XYZBank.java:34)\r\n\tat stepdefinitions.XYZBankStep.user_launch_xyz_banking_application(XYZBankStep.java:24)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\r\n\tat io.cucumber.java.Invoker.doInvoke(Invoker.java:66)\r\n\tat io.cucumber.java.Invoker.invoke(Invoker.java:24)\r\n\tat io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)\r\n\tat io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:64)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:104)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:71)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:199)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:234)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)\r\n\tat org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)\r\n\tat org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)\r\n",
+              "duration": 6341850100,
+              "status": "failed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 15761561700,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepdefinitions.LoginCucumberTest.beforeSteps()"
+                }
+              }
+            ],
+            "line": 12,
+            "name": "User launch XYZ Banking application",
+            "match": {
+              "location": "stepdefinitions.XYZBankStep.user_launch_xyz_banking_application()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 284300,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepdefinitions.LoginCucumberTest.afterSteps()"
+                }
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 10970100,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepdefinitions.LoginCucumberTest.beforeSteps()"
+                }
+              }
+            ],
+            "line": 13,
+            "name": "User login by selecting name from dropdown",
+            "match": {
+              "location": "stepdefinitions.XYZBankStep.user_login_by_selecting_name_from_dropdown()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 4004000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepdefinitions.LoginCucumberTest.afterSteps()"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 931900,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepdefinitions.LoginCucumberTest.beforeSteps()"
+                }
+              }
+            ],
+            "line": 14,
+            "name": "User Deposits ammount of dollars",
+            "match": {
+              "location": "stepdefinitions.XYZBankStep.user_deposits_ammount_of_dollars()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepdefinitions.LoginCucumberTest.afterSteps()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepdefinitions.LoginCucumberTest.beforeSteps()"
+                }
+              }
+            ],
+            "line": 15,
+            "name": "User verify deposit ammount in Transaction tab",
+            "match": {
+              "location": "stepdefinitions.XYZBankStep.user_verify_deposit_ammount_in_transaction_tab()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 997400,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepdefinitions.LoginCucumberTest.afterSteps()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepdefinitions.LoginCucumberTest.beforeSteps()"
+                }
+              }
+            ],
+            "line": 16,
+            "name": "User Withdrawl ammount of dollars",
+            "match": {
+              "location": "stepdefinitions.XYZBankStep.user_withdrawl_ammount_of_dollars()"
+            },
+            "after": [
+              {
+                "result": {
+                  "duration": 999000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepdefinitions.LoginCucumberTest.afterSteps()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 998300,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 2026400,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepdefinitions.LoginCucumberTest.beforeSteps()"
+                }
+              }
+            ],
+            "line": 17,
+            "name": "User verify withdrawl ammount in Transaction ammount",
+            "match": {
+              "location": "stepdefinitions.XYZBankStep.user_verify_withdrawl_ammount_in_transaction_ammount()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "stepdefinitions.LoginCucumberTest.afterSteps()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "E2E Testing Of XYZ Bank",
+    "description": "",
+    "id": "e2e-testing-of-xyz-bank",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/XYZ.feature",
+    "tags": []
+  }
+]
